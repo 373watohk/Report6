@@ -2,6 +2,8 @@ package jp.ac.uryukyu.ie.e185720;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +22,9 @@ public class Main {
                 + "全部当てたら(4つともヒットになったら)"
                 + "終了だよ〜\n"
                 + "じゃっ頑張ってね〜\n\n";
-      
+
+        int[] answer = new int[4];    //生成した答えはいる
+        int[] input = new int[4];     //入力した答えがはいる
 
         //タイトルとルールの表示
         BufferedReader br
@@ -28,5 +32,20 @@ public class Main {
         System.out.println(title);
         System.out.println(rule);
 
+        //4桁の重複しない答えの生成
+        //1~9までの数字を格納
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for(int i = 1;i <= 9;i++){
+            list.add(i);
+        }
+        //listをシャッフル
+        Collections.shuffle(list);
+
+        //３つ取り出しanswer配列に入れる
+        for(int i = 0;i < answer.length; i++){
+            answer[i]=list.get(i);
+            System.out.println(answer[i]);
+        }
+        //System.out.println(answer);
     }
 }
