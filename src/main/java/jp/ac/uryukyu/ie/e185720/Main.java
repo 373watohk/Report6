@@ -43,12 +43,11 @@ public class Main {
         //listをシャッフル
         Collections.shuffle(list);
 
-        //３つ取り出しanswer配列に入れる
+        //４つ取り出しanswer配列に入れる
         for(int i = 0;i < answer.length; i++){
             answer[i]=list.get(i);
             System.out.println(answer[i]);
         }
-        //System.out.println(answer);
 
         //何回答えたかカウント
         while(true) {
@@ -68,6 +67,8 @@ public class Main {
                 }
             }
             //答え判断
+            hit = 0;
+            blow = 0;
             for (int i = 0; i<answer.length; i++) {
                 for (int j = 0; j<answer.length; j++) {
                     if (i==j && input[i]==answer[j]) {
