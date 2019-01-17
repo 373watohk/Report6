@@ -80,7 +80,7 @@ public class Main {
             }
             //終了判断　ヒットが3つになったら終了
             System.out.println("ヒット" + hit + " ブロー" + blow);
-            if (hit == 3) {
+            if (hit == 4) {
                 System.out.println("おめでと〜");
                 break;
             }else{
