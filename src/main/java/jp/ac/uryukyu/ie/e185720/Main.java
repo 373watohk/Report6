@@ -1,7 +1,6 @@
 package jp.ac.uryukyu.ie.e185720;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
