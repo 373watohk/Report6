@@ -43,7 +43,7 @@ public class Main {
             if (end) {
                 System.out.println("おめでと〜！！");
                 break;
-            }else{
+            } else {
                 System.out.println();
             }
         }

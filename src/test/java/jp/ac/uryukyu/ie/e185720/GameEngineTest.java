@@ -30,6 +30,7 @@ class GameEngineTest {
         System.out.println(answer3);
         System.out.println(answer4);
 
+        //どの数字も重複していないことを証明する
         assertNotSame(answer1,answer2);
         assertNotSame(answer1,answer3);
         assertNotSame(answer1,answer4);

@@ -33,16 +33,16 @@ public class GameMain {
         //4桁の重複しない答えの生成
         //1~9までの数字を格納
         ArrayList<Integer> list = new ArrayList<Integer>();
-        for(int i = 1;i <= 9;i++){
+        for (int i = 1;i <= 9;i++) {
             list.add(i);
         }
         //listをシャッフル
         Collections.shuffle(list);
 
         //４つ取り出しanswer配列に入れる
-        for(int i = 0;i < answer.length; i++){
+        for (int i = 0;i < answer.length; i++) {
             answer[i]=list.get(i);
-            System.out.println(answer[i]);
+            //System.out.println(answer[i]);
         }
 
         //何回答えたかカウント
@@ -69,7 +69,7 @@ public class GameMain {
                 for (int j = 0; j<answer.length; j++) {
                     if (i==j && input[i]==answer[j]) {
                         hit++;
-                    }else if (input[i] == answer[j]) {
+                    } else if (input[i] == answer[j]) {
                         blow++;
                     }
                 }
@@ -79,7 +79,7 @@ public class GameMain {
             if (hit == 4) {
                 System.out.println("おめでと〜");
                 break;
-            }else{
+            } else {
             }
         }
     }
